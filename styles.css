@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ABE0F0;
+    font-family: 'Pixelify Sans', cursive;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    min-height: 400px;
+    background-color: #ffcdc9;
+    padding: 40px 30px;
+    border: 4px solid black;
+    box-shadow: 8px 8px 0px rgba(41, 34, 34, 0.3),
+                -2px -2px 0px rgba(34, 30, 30, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .yes-button {
+    font-family: "Pixelify Sans", cursive;
+    font-size: 2em;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: 3px solid #2d6a2f;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #2d6a2f;
+    transition: all 0.05s ease;
+  }
+  
+  .yes-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .yes-button:active {
+    box-shadow: 1px 1px 0px #2d6a2f;
+    transform: translate(2px, 2px);
+  }
+  
+  .no-button {
+    font-family: "Pixelify Sans", cursive;
+    font-size: 2em;
+    padding: 10px 30px;
+    background-color: #f44336;
+    color: white;
+    border: 3px solid #c62828;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #c62828;
+    transition: all 0.05s ease;
+  }
+  
+  .no-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .no-button:active {
+    box-shadow: 1px 1px 0px #c62828;
+    transform: translate(2px, 2px);
+  }
+  
+  .gif_container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 30px 20px;
+      min-height: auto;
+    }
+    
+    h1 {
+      font-size: 1.8em;
+      margin: 5px 0;
+    }
+    
+    .yes-button,
+    .no-button {
+      font-size: 1.5em;
+      padding: 8px 16px;
+    }
+    
+    .gif_container img {
+      max-width: 60%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 5px;
+    }
+    
+    .container {
+      width: 100%;
+      padding: 20px 15px;
+      border: 3px solid black;
+      box-shadow: 4px 4px 0px rgba(41, 34, 34, 0.3),
+                  -1px -1px 0px rgba(34, 30, 30, 0.2);
+      min-height: auto;
+    }
+    
+    h1 {
+      font-size: 1.3em;
+      margin: 5px 0;
+    }
+    
+    .yes-button,
+    .no-button {
+      font-size: 1.1em;
+      padding: 8px 15px;
+      border: 2px solid;
+      box-shadow: 2px 2px 0px !important;
+    }
+    
+    .yes-button:hover,
+    .no-button:hover {
+      transform: scale(1.02);
+    }
+    
+    .yes-button:active {
+      box-shadow: 1px 1px 0px #2d6a2f !important;
+      transform: translate(1px, 1px);
+    }
+    
+    .no-button:active {
+      box-shadow: 1px 1px 0px #c62828 !important;
+      transform: translate(1px, 1px);
+    }
+    
+    .gif_container img {
+      max-width: 90%;
+      height: auto;
+    }
+    
+    .buttons {
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 15px;
+    }
+  }
