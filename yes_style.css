@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@font-face {
+  font-family: 'Pixelon';
+  src: url('pixelon-font/Pixelon-OGALo.ttf') format('truetype'),
+       url('pixelon-font/Pixelon-E4JEg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
     display: flex;
@@ -7,7 +13,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #ABE0F0;
-    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Pixelon', cursive;
     padding: 10px;
     box-sizing: border-box;
 }
